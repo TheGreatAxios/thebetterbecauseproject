@@ -1,0 +1,42 @@
+extends partials/layout
+block inlineCSS
+	link(rel='stylesheet', href='/sass/stories.css')
+block content
+	include partials/navigation
+	main#blogMain
+		.centerPara
+			h1 The Better Because Project
+			.sloganPara
+				p Stories
+	.blogSection
+		each story in stories
+			- var storyId = story.id;
+			- var image = story.image.url
+			- var name = story.name;
+			- var anonymous = story.anonymous;
+			- var story = story.story;
+			- var country = story.country || "N/A";
+			.story
+				.leftSide
+					.image.tint
+						img(src=image)
+				.rightSide
+					.topBar
+						.anon
+							if anonymous
+								p By Anonymous
+							else
+								p By #{name}
+						.date
+							p March 27, 2019
+						//.country
+							p From #{country}
+					.storySection
+						p #{story}
+					.bottomBar
+						//.categories
+							p Categories: Option One, Number Three
+						.storyLink
+							p
+								a(target='_blank', href='/stories/' + storyId) Click to read the full story.
+	include partials/footer

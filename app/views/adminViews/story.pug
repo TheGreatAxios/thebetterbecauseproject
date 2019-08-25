@@ -1,0 +1,55 @@
+doctype html
+html(lang='en-US')
+	head
+		title The Better Because Project
+		link(rel='stylesheet', href='/sass/admin.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(charset='utf-8')
+		meta(name='description', content="The Admin Login page to the backend for The Better Because Project")
+	body
+		nav.profileNav
+			ul
+				li 
+					a(href='/admin/profile') Back to Profile
+				li
+					a(href='/admin/stories') Back to Stories
+				li
+					a(href='/admin/login') Back to Login
+				li
+					a(href='/') Back to Client Home
+				li
+					a(href='/admin/logout') Logout
+		main.storyPage
+			- var postId = id;
+			- var isTrue = true;
+			section.information
+				ul
+					li
+						a(href='#') User Name: #{name}
+					li
+						a(href='mailto:' + email) Click to email
+							#mail
+								| #{email}
+					li
+						unless published === isTrue
+							a(href='#') Not Published
+						else
+							a(href='#') Published
+					li
+						unless anonymous === isTrue
+							a(href='#') Not Anonymous
+						else
+							a(href='#') Anonymous
+					li
+						a(href='#') Notes: #{notes}
+					li
+						button#deleteButton(data-id='#{postId}') Delete This Story
+					li
+						a#link(href='/admin/stories/edit/' + postId + '?id=' + postId) Edit this Story
+				.imageContainer
+					img(src=image)
+			.titleContainer
+				p= story
+		footer.footer
+			p Powered By Fleur Technologies
+	script(src='/scripts/story.js')

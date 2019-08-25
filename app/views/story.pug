@@ -1,0 +1,29 @@
+extends partials/layout
+block inlineCSS
+	link(rel='stylesheet', href='/sass/story.css')
+block content
+	include partials/navigation
+	.titleSection
+		- var isTrue = true;
+
+		unless story.anonymous === isTrue
+			h4= story.name
+		else
+			h4 Anonymous
+		p= moment(story.date).format('MM-DD-YYYY')
+		img(src=story.image.url)
+	article.content
+		a(href='/stories') &larr; Back to Stories
+		.titleContainer
+			h2.title Categories
+		.contentContainer#contentContainer
+			p.paragraph#storyPara=story.story
+		.bottomContainer
+			unless story.anonymous === isTrue
+				h4 By #{story.name}
+			else 
+				h4 By Anonymous
+			a(href='/stories') &larr; Click to See More Stories
+	include partials/footer
+	script(src='/scripts/story.js')
+

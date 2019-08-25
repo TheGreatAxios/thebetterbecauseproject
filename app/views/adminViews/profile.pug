@@ -1,0 +1,27 @@
+doctype html
+html(lang='en-US')
+	head
+		title The Better Because Project
+		link(rel='stylesheet', href='/sass/admin.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(charset='utf-8')
+		meta(name='description', content="The Admin Login page to the backend for The Better Because Project")
+	body
+		nav.profileNav
+			ul
+				li 
+					if user != null
+						a(href='#') Profile
+					else 
+						| #{user}
+						| 's Profile
+				li
+					a(href='/admin/stories') Stories
+				li
+					a(href='/') Back to Client Home
+				li
+					a(href='/admin/logout') Logout
+		main#sectionMain
+			h2 Content Coming Soon!
+		footer.footer
+			p Powered By Fleur Technologies

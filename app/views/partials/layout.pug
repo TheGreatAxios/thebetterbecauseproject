@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-101155498-5')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-101155498-5');
+		title The Better Because Project
+		link(rel='shortcut icon', href='/favicon/favicon.ico')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(charset='utf-8')
+		meta(name='keywords', content='Better Because')
+		meta(name='description', content="The Better Because Project is filling the need for stories about how we’ve changed for the better because of what we’ve gone through with our mental health experiences, and about the growth and fulfillment that can come with these journeys.")
+		meta(property="og:image", content="/images/bbpLogoSmall.png")
+		meta(property="og:title", content="The Better Because Project")
+		meta(property="og:description", content="The Better Because Project is filling the need for stories about how we’ve changed for the better because of what we’ve gone through with our mental health experiences, and about the growth and fulfillment that can come with these journeys.")
+		block inlineCSS
+	body
+		block content
+	link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.1.0/css/all.css', integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt', crossorigin='anonymous')
+	block script

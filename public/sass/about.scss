@@ -1,0 +1,324 @@
+@import 'siteWide';
+
+.navLink {
+	color: $white;
+}
+main {
+	padding: 0;
+	margin: 0;
+}
+#sectionMain {
+	@include flexbox;
+	width: 100%;
+	@include respond(mobile) {
+		height: 100vh;
+	}
+	height: 100vh;
+	position: relative;
+	#heroImageOverlay {
+		@include flexbox;
+		height: 100%;
+		width: 100%;
+		#heroImage {
+			background: linear-gradient(
+          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45)
+        ), url('/images/aboutHeroImage.jpg');
+			@include flexbox;
+			@include flexcol(nowrap);
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			@include respond(mobile) {
+				background: linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url('/images/aboutHeroMobile.jpg');
+				background-size: cover;
+			}
+			h1 {
+				@include respond(mobile) {
+					width: 85%;
+					@include headerfont;
+				}
+				-webkit-align-self: center;
+				    -ms-flex-item-align: center;
+				            -ms-grid-row-align: center;
+				        align-self: center;
+				margin: 5% 0 0 0;
+				padding: 0;
+				@include headerfont;
+				color: $white;
+			}
+			.sloganPara {
+			width: 100%;
+			@include respond(mobile) {
+				width: 85%;
+			}
+			position: relative;
+			@include flexbox;
+			p {
+				width: 60%;
+				position: relative;
+				color: $white;
+				@include normalfont;
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+		}
+	}
+}
+section {
+	width: 100%;
+	h2 {
+		@include respond(mobile) {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+
+		}
+	}
+}
+.fullScreenText {
+	border-top: 5px solid $primary-color;
+	border-bottom: 5px solid $primary-color;
+	width: 100%;
+	height: 100vh;
+	background-color: $white;
+	@include flexbox;
+	@include flexcol(nowrap);
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-ite5s: center;
+	justify-content: center;
+	@include respond(mobile) {
+		height: auto;
+		min-height: 100%;
+		padding: 2.5% 0 2.5% 0;
+	}
+	h2 {
+		text-align: center;
+	}
+	.areaSection, #mission, #difference {
+		text-align: center;
+		width: 60%;
+		@include respond(mobile) {
+			width: 85%;
+			text-align: left;
+			margin: 0 auto;
+		}
+
+	}
+}
+
+// Quote Sections
+.twoQuotes {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	@include flexbox;
+	@include flexrow(wrap);
+	align-items: center;
+	justify-content: center;
+	@include respond(mobile) {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.quoteContainer {
+		@include flexbox;
+		@include flexcol(nowrap);
+		align-items: center;
+		justify-content: center;
+		margin: 2.5rem auto;
+		width: 45%;
+		@include respond(mobile) {
+			width: 100%;
+			height: auto;
+			min-height: 60vh;
+		}
+		min-height: 75vh;
+		height: 75%;
+		.borderContainer {
+			@include flexbox;
+			@include flexcol(nowrap);
+			align-items: center;
+			justify-content: center;
+			padding: 20%;
+			@include respond(mobile) {
+				padding: 15%;
+			}
+			width: 80%;
+			height: 80%;
+			border: none;
+			h3 {
+				@include respond(mobile) {
+					text-align: center;
+					width: 100%;
+				}
+				color: $white;
+				text-align: center;
+				width: 100%;
+				margin: 0 auto;
+				padding: 0;
+			}
+			p {
+				color: $white;
+				text-align: center;
+				margin: 15px;
+				width: 150%;
+			}
+			.quoteText {
+				visibility: hidden;
+
+			}
+		}
+		
+	}
+}
+#rebeccaSection {
+	height: auto;
+	min-height: 115vh;
+	.splitImageSection {
+		img {
+			@include respond(mobile) {
+				margin: 10px 0 0 0;
+			}
+			width: 50%;
+			height: auto;
+			box-shadow: 0 1px 6px $white, 0 1px 4px $white;
+		}
+	}
+}
+#mhasfSection {
+	.splitImageSection {
+		a {
+			width: 50%;
+			height: 50%;
+			img {
+				@include respond(mobile) {
+					margin: 10px 0 0 0;
+				}
+				width: 100%;
+				height: 100%;
+				box-shadow: 0 1px 6px $white, 0 1px 4px $white;
+				
+			}
+		}
+	}
+}
+.splitScreen {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	@include flexbox;
+	@include flexrow(wrap);
+	align-items: center;
+	background-color: $black;
+	.splitImageSection {
+		width: 35%;
+		height: 100%;
+		@include flexbox;
+		@include flexcol(nowrap);
+		align-items: center;
+		justify-content: center;
+		@include respond(mobile) {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.splitTextSection {
+		@include respond(mobile) {
+			width: 100%;
+			height: auto;
+		}
+		width: 65%;
+		height: 100%;
+		.splitTitle {
+			color: $white;
+			margin: 0 0 5px 0;
+			border-bottom: 5px solid $primary-color;
+			width: 75%;
+			@include respond(mobile) {
+				height: auto;
+				width: 85%;
+				text-align: center;
+				margin: 0 auto;
+				padding-top: 5px;
+			}
+		}
+		.splitText {
+			color: $white;
+			width: 75%;
+			@include respond(mobile) {
+				padding: 10px 0 0 10px;
+				height: auto;
+				width: 85%;
+				text-align: center;
+				margin: 10px auto;
+			}
+		}
+	}
+}
+
+#quoteContainerOne {
+	background:  linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url('/images/quoteTwo.jpg');
+	background-size: cover;
+	
+}
+
+#quoteContainerTwo {
+	background:  linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url('/images/quoteOne.jpg');
+	background-size: cover;
+}
+
+#quoteContainerThree {
+	background:  linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url('/images/quoteThree.jpg');
+	background-size: cover;
+}
+
+#quoteContainerFour {
+	background:  linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url('/images/quoteSix.jpg');
+	background-size: cover;
+}
+
+#quoteContainerFive {
+	background:  linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url('/images/quoteFive.jpg');
+	background-size: cover;
+}
+
+#quoteContainerSix {
+	background:  linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ), url('/images/quoteFour.jpg');
+	background-size: cover;
+}

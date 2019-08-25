@@ -1,0 +1,81 @@
+doctype html
+html(lang='en-US')
+	head
+		title The Better Because Project
+		link(rel='stylesheet', href='/sass/admin.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(charset='utf-8')
+		meta(name='description', content="The Admin Login page to the backend for The Better Because Project")
+	body
+		nav.profileNav
+			- var postId = id;
+			ul
+				li 
+					a(href='/admin/profile') Back to Profile
+				li
+					a(href='/admin/stories') Back to Stories
+				li
+					a(href='/admin/stories/' + postId) Back to View Only
+				li
+					a(href='/admin/login') Back to Login
+				li
+					a(href='/') Back to Client Home
+				li
+					a(href='/admin/logout') Logout
+		main.formSection
+			form(method='post', action='/admin/stories/edit/', enctype='application/json')
+				.editSection
+					input(type='text', name='name', id='name', value=name, onchange='newName(this')
+				.editSection#notesSection
+					textarea(name='notes', id='notes', onchange='newNotes(this)') #{notes}
+				.editSection#storySection
+					textarea(name='story', id='story', onchange='newStory(this)') #{story}
+				.editSection.section
+					if anonymous === false
+						input(type='radio', id='anonymous', value='true', name='anonymous')
+						label 
+							| Anonymous
+						input(type='radio', id='anonymous', value='false', name='anonymous', checked)
+						label
+							| Not Anonymous
+					else
+						input(type='radio', id='anonymous', value='true', name='anonymous', checked)
+						label 
+							| Anonymous
+						input(type='radio', id='anonymous', value='false', name='anonymous')
+						label 
+							| Not Anonymous
+				.editSection.section
+					if published === false
+						input(type='radio', id='published', value='true', name='published')
+						label 
+							| Published
+						input(type='radio', id='published', value='false', name='published', checked)
+						label
+							| Not Published
+					else
+						input(type='radio', id='published', value='true', name='published', checked)
+						label 
+							| Published
+						input(type='radio', id='published', value='false', name='published')
+						label 
+							| Not Published
+				.editSection
+					button(type='button')#changeImage Change The Image
+				.editSection#imageDecision
+					button(type='button')#upload Upload A New Image
+					button(type='button')#change Change To Default Image
+				.editSection#uploadNewImage
+					input(type='file', id='imageUpload', name='imageUpload')
+					label(for='imageUpload') Please upload a different image
+				.editSection#changeToDefault
+					input(type='hidden', id='imageDefault', name='imageDefault')
+					label(for='imageDefault') Story Will Be Changed To Show Default Image
+				.hiddenElements
+					input(type='hidden', id='email', value=email, name='email')
+					input(type='hidden', id='storyid', value='true', name='storyid')
+				.editSection
+					input(type='submit', value='Update My Story')
+	script(src='/scripts/editPost.js')
+
+

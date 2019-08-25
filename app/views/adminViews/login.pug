@@ -1,0 +1,26 @@
+doctype html
+html(lang='en-US')
+	head
+		title The Better Because Project
+		link(rel='stylesheet', href='/sass/admin.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(charset='utf-8')
+		meta(name='description', content="The Admin Login page to the backend for The Better Because Project")
+	body
+		nav.profileNav
+			ul
+				li 
+					li
+						h1 The Better Because Project | Login
+					li
+						a(href='/') Back to Client Home
+		main#sectionMain
+			form(action='/admin/login', method='post')
+				section.section
+					input(type='text', name='username', placeholder='Username')
+				section.section
+					input(type='password', name='password', placeholder='Password')
+				section.section
+					input(type='submit', value='Submit')
+		footer.footer
+			p Powered By Fleur Technologies

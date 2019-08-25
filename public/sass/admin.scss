@@ -1,0 +1,414 @@
+@import 'siteWide';
+
+/* Login Page*/
+nav {
+	height: 20vh;
+	width: 100%;
+	background-color: $black;
+	@include flexbox;
+	@include flexcol(nowrap);
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	h1 {
+		height: auto;
+		width: 100%;
+		-webkit-align-self: center;
+		    -ms-flex-item-align: center;
+		            -ms-grid-row-align: center;
+		        align-self: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		text-align: center;
+		color: $white;
+		@include headerfont;
+	}
+}
+
+main {
+	height: auto;
+	min-height: 60vh;
+	width: 100%;
+	background-color: $white;
+	@include flexbox;
+	@include flexrow(wrap);
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+/* Profile Page*/
+.profileNav {
+	ul {
+		width: 100%;
+		height: auto;
+		@include flexbox;
+		@include flexrow(nowrap);
+		li {
+			list-style-type: none;
+			margin: 0 auto;
+			color: $white;
+			a {
+				color: $white;
+				&:hover {
+					color: pink;
+				}
+			}
+		}
+	}
+}
+.blogSection {
+	position: relative;
+	margin: 0;
+	padding: 5%;
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+	@include flexbox;
+	@include flexrow(wrap);
+	color: $black;
+	@include respond(mobile) {
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.story {
+		text-decoration: none;
+		position: relative;
+		margin: auto;
+		padding: .5rem;
+		width: 25%;
+		height: auto;
+		background-color: $white;
+		overflow: none;
+		@include respond(mobile) {
+			width: 85%;
+			height: auto;
+			max-width: 85%;
+		}
+		.wrapSect {
+			width: 100%;
+			height: auto;
+			@include flexbox;
+			@include flexrow(nowrap);
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			.storyLink {
+				width: 37.5%;
+				z-index: 200;
+				position: absolute;
+				bottom: 15px;
+				left: 35px;
+				@include flexbox;
+				@include flexcol(nowrap);
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				a {
+					color: $primary-color;
+					padding: 2.5%;
+					background-color: $black;
+					text-align: center;
+					border-radius: 15px;
+					position: relative;
+					margin: left;
+					@include normalfont;
+				}
+			}
+			.anon {
+				width: 37.5%;
+				z-index: 200;
+				position: absolute;
+				bottom: 15px;
+				right: 12px;
+				@include flexbox;
+				@include flexcol(nowrap);
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				p {
+					margin: 0;
+					width: 100%;
+					color: $primary-color;
+					background-color: $black;
+					padding: 2.5%;
+					border-radius: 15px;
+					position: relative;
+					@include normalfont;
+					text-align: center;
+
+				}
+			}
+		}
+		.image {
+			margin: 0 auto;
+			z-index: 100;
+			position: relative;
+			height: 100%;
+			width: 100%;
+			-webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+		    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+			img {
+				position: relative;
+				height: 100%;
+				width: 100%;
+				margin: 0 auto;
+				@include respond(mobile) {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+#blogMain {
+	width: 100%;
+	height: 100vh;
+	background: -webkit-gradient(
+          linear, 
+          left top, left bottom, 
+          from(rgba(0, 0, 0, 0.45)), 
+          to(rgba(0, 0, 0, 0.45))
+        ), url('/images/storiesHeroImage.jpg');
+	background: -webkit-linear-gradient(
+          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45)
+        ), url('/images/storiesHeroImage.jpg');
+	background: -o-linear-gradient(
+          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45)
+        ), url('/images/storiesHeroImage.jpg');
+	background: linear-gradient(
+          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45)
+        ), url('/images/storiesHeroImage.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	@include flexbox;
+	@include flexcol(nowrap);
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	p, h1 {
+		-webkit-align-self: center;
+		    -ms-flex-item-align: center;
+		            -ms-grid-row-align: center;
+		        align-self: center;
+		color: $white;
+		text-align: center;
+		width: 100%;
+		@include respond(mobile) {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+
+
+form {
+	width: 50%;
+	height: 100%;
+	@include flexbox;
+	@include flexcol(nowrap);
+	padding: 0;
+	margin: 0 auto;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	            -ms-grid-row-align: center;
+	        align-self: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	.section {
+		width: 100%;
+		height: auto;
+		margin: 1.5rem;
+		@include flexbox;
+		@include flexcol(nowrap);
+		input {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			border-radius: 5px;
+		}
+	}
+}
+
+#sectionMain {
+	h2 {
+		text-align: center;
+		margin: 2rem auto;
+	}
+}
+
+.storyPage {
+	height: auto;
+	width: 60%;
+	text-align: left;
+	margin: 0 auto;
+	line-height: 2.5;
+}
+.information {
+	@include flexbox;
+	@include flexrow(wrap);
+	width: 100%;
+	height: auto;
+	ul {
+		list-style-type: none;
+		color: $black;
+		&:hover {
+			color: $black;
+			text-decoration: none;
+		}
+		#mail {
+			color: blue;
+			cursor: pointer;
+			&:hover {
+				color: pink;
+			}
+		}
+		a {
+			cursor: text;
+			list-style-type: none;
+			color: $black;
+			&:hover {
+				color: $black;
+				text-decoration: none;
+			}
+		}
+		#link {
+			cursor: pointer;
+			color: red;
+			&:hover {
+				color: blue;
+			}
+		}
+
+	}
+	.imageContainer, ul {
+		width: 50%;
+	}
+}
+.imageContainer {
+	height: auto;
+	img {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+.formSection {
+	padding: 5%;
+	h3 {
+		height: 25%;
+		text-align: center;
+		margin: 0 auto;
+		padding: 15px;
+		@include header-three-four;
+	}
+	width: 100%;
+	height: 100%;
+	min-height: 75vh;
+	margin: 0;
+	@include flexbox;
+	@include flexcol(nowrap);
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	form {
+		width: 100%;
+		height: 75%;
+		@include flexbox;
+		@include flexcol(wrap);
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		#storySection {
+			height: auto;
+			textarea {
+				height: 60vh;
+				resize: vertical;
+			}
+		}
+		#upload, #change, #uploadNewImage, #changeToDefault {
+			visibility: hidden;
+			height: 0px;
+		}
+		.editSection {
+			width: 100%;
+			height: 20%;
+			@include flexbox;
+			@include flexrow(nowrap);
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			padding: 5px 0 5px 0;
+			input, textarea {
+				width: 80%;
+				padding: 10px 10px 10px 10px;
+				margin: 1%;
+				-webkit-box-sizing: border-box;
+				        box-sizing: border-box;
+				text-align: center;
+				color: $black;
+			}
+		}
+		#countingSection {
+			@include flexcol(nowrap);
+		}
+		.checkSection {
+			input {
+				width: 5%;
+			}
+			label {
+				width: 75%;
+			}
+		}
+	}
+}
+

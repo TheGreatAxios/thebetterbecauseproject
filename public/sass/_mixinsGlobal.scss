@@ -1,0 +1,96 @@
+@import 'textGlobal';
+/* Mixins */
+@mixin respond($media) {
+	@if $media == mobile {
+		@media only screen and (min-device-width: 1px) and (max-device-width: $small-screen) { @content; }
+	}
+	@else if $media == medium {
+		@media only screen and (mmin-device-width: $small-screen + 1) and (max-device-width: $big-screen - 1) { @content; }
+	}
+	@else if $media == large {
+		@media only screen and (min-device-width: $big-screen) { @content; }
+	}
+}
+@mixin flexbox {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin flexrow($wrap) {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: $wrap;
+	    -ms-flex-wrap: $wrap;
+	        flex-wrap: $wrap;
+}
+@mixin flexcol($wrap) {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-flex-wrap: $wrap;
+	    -ms-flex-wrap: $wrap;
+	        flex-wrap: $wrap;
+}
+
+@mixin normalfont {
+	font-family: $primary-font;
+	text-decoration: none;
+	@include respond(mobile) { font-size: 16px; }
+	@include respond(medium) { font-size: 18px; }
+	@include respond(large) {
+		font-size: 20px;
+	}
+
+}
+@mixin headerfont {
+	font-family: $second-font;
+	text-decoration: none;
+	@include respond(mobile) { font-size: 30px; }
+	@include respond(medium) { font-size: 38px; }
+	@include respond(large) {
+		font-size: 45px;
+	}
+
+}
+ 
+@mixin smaller-head-font {
+	font-family: $second-font;
+	text-decoration: none;
+	@include respond(mobile) { font-size: 26px; }
+	@include respond(medium) { font-size: 34px; }
+	@include respond(large) {
+		font-size: 38px;
+	}
+}
+
+@mixin header-three-four {
+	font-family: $second-font;
+	text-decoration: none;
+	@include respond(mobile) { font-size: 22px; }
+	@include respond(medium) { font-size: 30px; }
+	@include respond(large) {
+		font-size: 35px;
+	}
+}
+@mixin header-five-six {
+	font-family: $second-font;
+	text-decoration: none;
+	@include respond(mobile) { font-size: 18px; }
+	@include respond(medium) { font-size: 24px; }
+	@include respond(large) {
+		font-size: 30px;
+	}
+}
+
+@mixin portfolio {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100;
+		background-attachment: fixed;
+}
