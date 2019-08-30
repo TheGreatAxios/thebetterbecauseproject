@@ -72,3 +72,26 @@ Current Example (WRONG)
 This project utilizes MongoDB (NoSQL) as the database with MongooseJs as the ORM (Object Relational Mapping). The models folder contains the layout of what the a story submission will contain.  The best part about Mongoose is that you don't need much if any SQL experience. If you know JavaScript; you can access the database.  
 
 Currently the model file is fairly basic.  Over time it will grow as the platform does to utilize more of the feature set offered by both MongoDB and Mongoose.
+
+## Roadmap (Features under Github Projects)
+
+ - [X] NodeJs Configuration with Mongoose
+ - [X] Cloudinary API Integration for Story Images
+ - [X] Custom Backend with Admin and Developer Access
+ - [X] Ability to edit stories via the backend
+ - [ ] Ability to delete stories via the backend
+ - [ ] Ability to update images via the backend
+ - [ ] Change one story section to dynamic paragraphs as selected by the user
+ - [ ] Make dynamic paragraphs editable via the backend
+ - [ ] Integration of Medium
+ - [ ] Update's to the Front-end Design
+
+## Tests
+
+Currently this project has no tests written. We hope to improve that by writing tests for as much as possible in order to better help future developers easily come into the project as well as understand where issues are coming from.
+
+### Contributors
+
+|Sawyer Cutler|[Fleur Technologies](https://fleurtechnologies.com) | TheGreatAxios |
+|--|--|--|
+| Project Advisor | Project Developer | Owner of Repository
