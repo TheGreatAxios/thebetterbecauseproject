@@ -2,24 +2,18 @@ const express = require('express');
 const router = express.Router();
 const config = require('../../../config/config');
 let db = require('./../db');
-const mongoose = require('mongoose');
-const datab = 'mongodb+srv://admin:admin@stories-mduag.mongodb.net/db?retryWrites=true';
-mongoose.connect(datab, { useNewUrlParser: true }, (err, database) => {
-		if (err) {
-			console.log(err);
-		} else {
-			var storiesDB = database.collection.stories;
-			console.log('Connected Successfully');
-	}
-});
+
+// Connect to Database
+let mongoose = require('../../../logic/databaseConnect');
+let storySchema = require('../../../models/story');
+let Story = mongoose.model('Story', storySchema);
+
 // Image Save Dependencies
 const multer = require('multer');
 const cloudinary = require('cloudinary');
 const cloudinaryStorage = require('multer-storage-cloudinary');
-// Connect to Database
-let storySchema = require('../../../models/story');
 
-let Story = mongoose.model('Story', storySchema);
+
 
 router.get('/admin/stories', require('connect-ensure-login').ensureLoggedIn('/admin/login'), (req, res) => {
 	Story.find({}, (err, stories) => {

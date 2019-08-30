@@ -1,20 +1,31 @@
+const config = require('../../../config/user_config');
+
 let records = [
 	{
 		id: 1,
-		username: 'thegreataxios',
-		password: 'admin',
-		displayName: 'Sawyer',
+		username: config.axios.username,
+		password: config.axios.password,
+		displayName: config.axios.displayName,
 		emails: [{
-			value: 'sawyer@fleurtechnologies.com'
+			value: config.axios.email
 		}]
 	},
 	{
 		id: 2, 
-		username: 'becca',
-		password: 'better',
-		displayName: 'Rebecca',
+		username: config.admin.username,
+		password: config.admin.password,
+		displayName: config.admin.displayName,
 		emails: [{
-			value: 'rebecca@rebeccamassie.com'
+			value: config.admin.email
+		}]
+	},
+	{
+		id: 3, 
+		username: config.dev.username,
+		password: config.dev.password,
+		displayName: config.dev.displayName,
+		emails: [{
+			value: config.dev.email
 		}]
 	}
 ];

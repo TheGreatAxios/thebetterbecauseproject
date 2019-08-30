@@ -19,6 +19,6 @@ mongoose.connect(db, { useNewUrlParser: true }, (err, database) => {
 			console.log('Connected Successfully');
 	}
 });
-module.exports.db = db;
+
 module.exports = mongoose;
 
