@@ -1,7 +1,14 @@
 # The Better Because Project
 
-The Better Because Project is an open source project focused on ...
+The Better Because Project is an open source project in partnership with the Mental Health Association of San Francisco (MHASF).
 
+The mission of The Better Because Project is to inspire people through stories about how we’ve changed for the better because of what we’ve gone through with our mental health experiences. In addition, our stories discussthe growth and fulfillment that can come with these journeys.
+
+In addition to this project having an open source codebase; we are always on the lookout for those willing to volunteer.  These positions include: graphic designers, social media managers, story editors, outreach team members and general volunteers.
+
+If you’re interested in volunteering on an ongoing basis with the team please email the founder, Rebecca Massie, at Rebecca@TheBetterBecauseProject.org
+
+We’re a fun remote team around the USA and very passionate about this important cause. We can offer official non-profit volunteer hours from Mental Health Association of San Francisco and letters of recommendations to add to your resumes. You’d also be contributing to an important and impactful social justice project.
 
 # About the Code
 
