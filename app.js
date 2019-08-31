@@ -1,5 +1,6 @@
 'use strict';
 
+// Basic Server, Secruity, Logging, and Data Packages
 const express = require('express'); // Server
 const sitemap = require('express-sitemap')();
 const compression = require('compression'); // Gzip Compression
@@ -18,21 +19,20 @@ sass.compiler = require('node-sass');
 // Config
 const config = require('./app/config/config');
 
-const app = module.exports = express(); // Initialize App
-
+// Initialize App
+const app = module.exports = express(); 
 
 /* APP SETUP */
-app.locals.moment = require('moment');
 app.use(logger('dev')); // LOGGER IN DEV
 
-app.use(bodyParser.json()); // ACCEPT JSON DATA
+app.use(bodyParser.json()); // Utlize JSON data
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// VIEW ENGINE
+// VIEW ENGINE (PugJs)
 app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, './app/views'));
+app.set('views', path.join(__dirname, './app/views')); // Will be separating views into client and admin
 
-// Sass
+// Sass (We would like to separate SCSS and CSS files into two different folders)
 app.use(sass({
 	src: path.join(__dirname, 'public'),
 	dest: path.join(__dirname, 'public')
@@ -40,16 +40,21 @@ app.use(sass({
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Require the App, this will also get split into client and admin
 require('./app/index')(app);
 
 //Compression
 app.use(compression());
 
-
-
+// Basic Error Handler (Can Be Imrpoved Upon)
 app.use((err, req, res, next) => {
 	console.error(err);
 	res.status(500).send('Server Error');
 });
+
+// Generate Sitemap
 sitemap.generate(app);
+
+// Export App to be called in ./app/index.js
 module.exports = app;

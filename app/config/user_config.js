@@ -1,7 +1,8 @@
 'use strict';
-
+// Requires Environmetnal Variables
 require('dotenv').config();
 
+// Config Values for Admin Users
 const config = {
 	dev: {
 		password: 'thebetterbecauseproject',

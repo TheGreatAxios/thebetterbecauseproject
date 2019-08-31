@@ -1,7 +1,7 @@
 'use strict';
-
+// Requires Environmetnal Variables
 require('dotenv').config();
-
+// Config Values for the Application, Cloudinary, and MongoDB
 const config = {
 	app: {
 		port: parseInt(process.env.PORT) || 80,
