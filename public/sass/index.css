@@ -606,6 +606,17 @@ header {
       font-family: Helvetica, sans-serif;
       text-decoration: none;
       margin: 5% 0 0 0; }
+    #sectionMain .centerPara h4 {
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 0 10% 4% 10%;
+      font-family: Helvetica, sans-serif;
+      text-decoration: none;
+      margin: 0% 10% 0% 10%; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         #sectionMain .centerPara h1 {
           font-size: 30px; } }
