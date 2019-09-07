@@ -17,6 +17,7 @@ section#variable
 		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 		We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 	style(type='text/css').
+		#mc_embed_signup input.email {width: 250px;}
 		#mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
 		#mergeRow-gdpr {margin-top: 20px;}
 		#mergeRow-gdpr fieldset label {font-weight: normal;}
@@ -24,8 +25,8 @@ section#variable
 	#mc_embed_signup
 		form#mc-embedded-subscribe-form.validate(action='https://thebetterbecauseproject.us20.list-manage.com/subscribe/post?u=bdb13cb4442f3c1839cb4e2f5&id=e5ab25e90d', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
 			#mc_embed_signup_scroll
-				label(for='mce-EMAIL')#newsHead The Better Because Project Newsletter
-				input#mce-EMAIL.email(type='email', value='', name='EMAIL', placeholder='email address', required='')
+				label(for='mce-EMAIL')
+				input#mce-EMAIL.email(type='email', value='', name='EMAIL', placeholder='Sign up to our newsletter', required='')
 				// real people should not fill this in and expect good things - do not remove this or risk form bot signups
 				div(style='position: absolute; left: -5000px;', aria-hidden='true')
 					input(type='text', name='b_bdb13cb4442f3c1839cb4e2f5_e5ab25e90d', tabindex='-1', value='')
