@@ -615,15 +615,33 @@ header {
       @media only screen and (min-device-width: 1024px) {
         #sectionMain .centerPara h1 {
           font-size: 45px; } }
-    #sectionMain .centerPara h4 {
+    #sectionMain .centerPara .sloganPara {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 0 10% 4% 10%;
-      margin: 0 10% 4% 10%; }
+      width: 100%;
+      position: relative; }
+      @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+        #sectionMain .centerPara .sloganPara {
+          width: 85%; } }
+      #sectionMain .centerPara .sloganPara p {
+        width: 80%;
+        position: relative;
+        color: #FFFFFF;
+        font-family: Arial, serif;
+        text-decoration: none;
+        text-align: center;
+        margin: 4% auto 8% auto; }
+        @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+          #sectionMain .centerPara .sloganPara p {
+            font-size: 16px; } }
+        @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
+          #sectionMain .centerPara .sloganPara p {
+            font-size: 18px; } }
+        @media only screen and (min-device-width: 1024px) {
+          #sectionMain .centerPara .sloganPara p {
+            font-size: 20px; } }
 
 .formTitleSection {
   padding: 5%;
