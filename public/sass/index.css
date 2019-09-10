@@ -629,19 +629,19 @@ header {
         width: 80%;
         position: relative;
         color: #FFFFFF;
-        font-family: Arial, serif;
+        font-family: Helvetica, sans-serif;
         text-decoration: none;
         text-align: center;
-        margin: 4% auto 8% auto; }
+        margin: 0% auto 4% auto; }
         @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
           #sectionMain .centerPara .sloganPara p {
-            font-size: 16px; } }
+            font-size: 18px; } }
         @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
           #sectionMain .centerPara .sloganPara p {
-            font-size: 18px; } }
+            font-size: 24px; } }
         @media only screen and (min-device-width: 1024px) {
           #sectionMain .centerPara .sloganPara p {
-            font-size: 20px; } }
+            font-size: 30px; } }
 
 .formTitleSection {
   padding: 5%;
