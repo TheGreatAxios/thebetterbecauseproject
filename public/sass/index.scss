@@ -67,15 +67,24 @@
 			@include headerfont;
 			margin: 5% 0 0 0;
 		}
-		h4 {
+		.sloganPara {
 			-webkit-align-self: center;
 			    -ms-flex-item-align: center;
 			            -ms-grid-row-align: center;
 			        align-self: center;
-			text-align: center;
-			color: $white;
-			padding: 0 10% 4% 10%;
-			margin: 0 10% 4% 10%;
+			width: 100%;
+			@include respond(mobile) {
+				width: 85%;
+			}
+			position: relative;
+			p {
+				width: 80%;
+				position: relative;
+				color: $white;
+				@include header-five-six;
+				text-align: center;
+				margin: 0% auto 4% auto;
+			}
 		}
 	}
 }
