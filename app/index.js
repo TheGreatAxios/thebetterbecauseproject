@@ -9,6 +9,7 @@ module.exports = (app) => {
 	let about = require('./client/components/about/controller');
 	let legal = require('./client/components/legal/controller');
 	let stories = require('./client/components/stories/controller');
+	let oauth = require('./client/components/oauth2/controller');
 	// The array of routes
 	/*
 	
@@ -16,7 +17,7 @@ module.exports = (app) => {
 	not sure if there is a bad amount of overhead because of this
 
 	*/
-	let routes = [index, about, stories, legal];
+	let routes = [index, about, stories, legal, oauth];
 	// Admin
 	let dashboard = require('./admin/components/dashboard/controller');
 	let adminStories = require('./admin/components/stories/controller');
