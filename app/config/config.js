@@ -13,6 +13,10 @@ const config = {
 		api_key: process.env.API_KEY,
 		api_secret: process.env.API_SECRET
 	},
+	medium: {
+		client_id: process.env.MEDIUM_CLIENT_ID,
+		client_secret: process.env.MEDIUM_CLIENT_SECRET
+	},
 	mongo: {
 		productionUri: process.env.MONGO_URI_PRODUCTION,
 		testUri: process.env.MONGO_URI_DEV
