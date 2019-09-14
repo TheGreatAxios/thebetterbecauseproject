@@ -61,14 +61,14 @@ $big-screen: 1024px;
 @mixin headerfont {
 	font-family: $second-font;
 	text-decoration: none;
-	@include respond(mobile) { font-size: 30px; }
-	@include respond(medium) { font-size: 38px; }
+	@include respond(mobile) { font-size: 32px; }
+	@include respond(medium) { font-size: 40px; }
 	@include respond(large) {
-		font-size: 45px;
+		font-size: 47px;
 	}
 
 }
- 
+
 @mixin smaller-head-font {
 	font-family: $second-font;
 	text-decoration: none;
@@ -91,10 +91,10 @@ $big-screen: 1024px;
 @mixin header-five-six {
 	font-family: $second-font;
 	text-decoration: none;
-	@include respond(mobile) { font-size: 18px; }
-	@include respond(medium) { font-size: 24px; }
+	@include respond(mobile) { font-size: 16px; }
+	@include respond(medium) { font-size: 22px; }
 	@include respond(large) {
-		font-size: 30px;
+		font-size: 28px;
 	}
 }
 
@@ -336,7 +336,7 @@ header {
 				line-height: 1.5;
 			}
 		}
-		
+
 	}
 	section {
 		background-color: $black;
