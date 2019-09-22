@@ -538,11 +538,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
   position: relative; }
-  @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
-    #sectionMain {
-      height: 100vh; } }
   #sectionMain #heroImageOverlay {
     display: -webkit-box;
     display: -webkit-flex;
@@ -576,9 +572,7 @@ main {
       padding: 0;
       height: 100%;
       width: 100%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed; }
+      background-size: cover; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         #sectionMain #heroImageOverlay #heroImage {
           background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/aboutHeroMobile.jpg");
@@ -617,32 +611,55 @@ main {
           #sectionMain #heroImageOverlay #heroImage h1 {
             font-size: 47px; } }
       #sectionMain #heroImageOverlay #heroImage .sloganPara {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
         width: 100%;
-        position: relative;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
+        position: relative; }
         @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
           #sectionMain #heroImageOverlay #heroImage .sloganPara {
-            width: 85%; } }
+            width: 90%; } }
         #sectionMain #heroImageOverlay #heroImage .sloganPara p {
-          width: 60%;
+          width: 80%;
           position: relative;
           color: #FFFFFF;
-          font-family: Arial, serif;
+          font-family: Helvetica, sans-serif;
           text-decoration: none;
           text-align: center;
-          margin: 0 auto; }
+          margin: 0% auto 4% auto; }
           @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
             #sectionMain #heroImageOverlay #heroImage .sloganPara p {
-              font-size: 16px; } }
+              font-size: 18px; } }
           @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
             #sectionMain #heroImageOverlay #heroImage .sloganPara p {
-              font-size: 18px; } }
+              font-size: 24px; } }
           @media only screen and (min-device-width: 1024px) {
             #sectionMain #heroImageOverlay #heroImage .sloganPara p {
-              font-size: 20px; } }
+              font-size: 30px; } }
+          @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+            #sectionMain #heroImageOverlay #heroImage .sloganPara p {
+              text-align: left; } }
+        #sectionMain #heroImageOverlay #heroImage .sloganPara h4 {
+          width: 80%;
+          position: relative;
+          color: #FFFFFF;
+          font-family: Helvetica, sans-serif;
+          text-decoration: none;
+          text-align: center;
+          margin: 0% auto 4% auto; }
+          @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+            #sectionMain #heroImageOverlay #heroImage .sloganPara h4 {
+              font-size: 22px; } }
+          @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
+            #sectionMain #heroImageOverlay #heroImage .sloganPara h4 {
+              font-size: 30px; } }
+          @media only screen and (min-device-width: 1024px) {
+            #sectionMain #heroImageOverlay #heroImage .sloganPara h4 {
+              font-size: 35px; } }
+          @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+            #sectionMain #heroImageOverlay #heroImage .sloganPara h4 {
+              text-align: center; } }
 
 section {
   width: 100%; }
@@ -684,7 +701,9 @@ section {
     text-align: center; }
   .fullScreenText .areaSection, .fullScreenText #mission, .fullScreenText #difference {
     text-align: center;
-    width: 60%; }
+    width: 60%;
+    position: relative;
+    color: #FFFFFF; }
     @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
       .fullScreenText .areaSection, .fullScreenText #mission, .fullScreenText #difference {
         width: 85%;
@@ -693,8 +712,7 @@ section {
 
 .twoQuotes {
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -711,7 +729,7 @@ section {
   justify-content: center; }
   @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
     .twoQuotes {
-      width: 85%;
+      width: 100%;
       margin: 0 auto; } }
   .twoQuotes .quoteContainer {
     display: -webkit-box;
@@ -728,15 +746,13 @@ section {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem auto;
-    width: 45%;
-    min-height: 75vh;
+    margin: auto;
+    width: 50%;
     height: 75%; }
     @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
       .twoQuotes .quoteContainer {
         width: 100%;
-        height: auto;
-        min-height: 60vh; } }
+        height: auto; } }
     .twoQuotes .quoteContainer .borderContainer {
       display: -webkit-box;
       display: -webkit-flex;
@@ -752,13 +768,14 @@ section {
       flex-wrap: nowrap;
       align-items: center;
       justify-content: center;
-      padding: 20%;
+      padding: 10%;
       width: 80%;
-      height: 80%;
-      border: none; }
+      height: 380px;
+      border: 5px solid #FFFFFF; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         .twoQuotes .quoteContainer .borderContainer {
-          padding: 15%; } }
+          height: auto;
+          margin: 10%; } }
       .twoQuotes .quoteContainer .borderContainer h3 {
         color: #FFFFFF;
         text-align: center;
@@ -774,35 +791,37 @@ section {
         text-align: center;
         margin: 15px;
         width: 150%; }
-      .twoQuotes .quoteContainer .borderContainer .quoteText {
-        visibility: hidden; }
 
 #rebeccaSection {
-  height: auto;
-  min-height: 115vh; }
-  #rebeccaSection .splitImageSection img {
-    width: 50%;
-    height: auto;
-    box-shadow: 0 1px 6px #FFFFFF, 0 1px 4px #FFFFFF; }
-    @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
-      #rebeccaSection .splitImageSection img {
-        margin: 10px 0 0 0; } }
+  height: auto; }
+  #rebeccaSection .splitImageSection {
+    justify-content: border-top; }
+    #rebeccaSection .splitImageSection img {
+      width: 50%;
+      height: auto;
+      box-shadow: 0 1px 6px #FFFFFF, 0 1px 4px #FFFFFF; }
+      @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+        #rebeccaSection .splitImageSection img {
+          margin: 10px 0 0 0; } }
 
-#mhasfSection .splitImageSection a {
-  width: 50%;
-  height: 50%; }
-  #mhasfSection .splitImageSection a img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 1px 6px #FFFFFF, 0 1px 4px #FFFFFF; }
-    @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+#mhasfSection {
+  height: auto; }
+  #mhasfSection .splitImageSection {
+    justify-content: border-top; }
+    #mhasfSection .splitImageSection a {
+      width: 50%;
+      height: 50%; }
       #mhasfSection .splitImageSection a img {
-        margin: 10px 0 0 0; } }
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 1px 6px #FFFFFF, 0 1px 4px #FFFFFF; }
+        @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+          #mhasfSection .splitImageSection a img {
+            margin: 10px 0 0 0; } }
 
 .splitScreen {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -815,8 +834,7 @@ section {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  align-items: center;
-  background-color: #2D2E2D; }
+  align-items: center; }
   .splitScreen .splitImageSection {
     width: 35%;
     height: 100%;
@@ -833,7 +851,7 @@ section {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center; }
+    justify-content: border-top; }
     @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
       .splitScreen .splitImageSection {
         width: 100%;
@@ -845,16 +863,28 @@ section {
       .splitScreen .splitTextSection {
         width: 100%;
         height: auto; } }
+    .splitScreen .splitTextSection p {
+      font-family: Helvetica, sans-serif;
+      text-decoration: none; }
+      @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+        .splitScreen .splitTextSection p {
+          font-size: 18px; } }
+      @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
+        .splitScreen .splitTextSection p {
+          font-size: 24px; } }
+      @media only screen and (min-device-width: 1024px) {
+        .splitScreen .splitTextSection p {
+          font-size: 30px; } }
     .splitScreen .splitTextSection .splitTitle {
       color: #FFFFFF;
       margin: 0 0 5px 0;
-      border-bottom: 5px solid #FFCC01;
-      width: 75%; }
+      width: 75%;
+      text-decoration: underline; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         .splitScreen .splitTextSection .splitTitle {
           height: auto;
           width: 85%;
-          text-align: center;
+          text-align: left;
           margin: 0 auto;
           padding-top: 5px; } }
     .splitScreen .splitTextSection .splitText {
@@ -865,29 +895,5 @@ section {
           padding: 10px 0 0 10px;
           height: auto;
           width: 85%;
-          text-align: center;
+          text-align: left;
           margin: 10px auto; } }
-
-#quoteContainerOne {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/quoteTwo.jpg");
-  background-size: cover; }
-
-#quoteContainerTwo {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/quoteOne.jpg");
-  background-size: cover; }
-
-#quoteContainerThree {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/quoteThree.jpg");
-  background-size: cover; }
-
-#quoteContainerFour {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/quoteSix.jpg");
-  background-size: cover; }
-
-#quoteContainerFive {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/quoteFive.jpg");
-  background-size: cover; }
-
-#quoteContainerSix {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/quoteFour.jpg");
-  background-size: cover; }

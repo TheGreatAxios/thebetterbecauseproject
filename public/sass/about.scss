@@ -11,9 +11,7 @@ main {
 	@include flexbox;
 	width: 100%;
 	@include respond(mobile) {
-		height: 100vh;
 	}
-	height: 100vh;
 	position: relative;
 	#heroImageOverlay {
 		@include flexbox;
@@ -21,7 +19,7 @@ main {
 		width: 100%;
 		#heroImage {
 			background: linear-gradient(
-          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45),
           rgba(0, 0, 0, 0.45)
         ), url('/images/aboutHeroImage.jpg');
 			@include flexbox;
@@ -39,11 +37,9 @@ main {
 			height: 100%;
 			width: 100%;
 			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
 			@include respond(mobile) {
 				background: linear-gradient(
-          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6),
           rgba(0, 0, 0, 0.6)
         ), url('/images/aboutHeroMobile.jpg');
 				background-size: cover;
@@ -63,21 +59,38 @@ main {
 				color: $white;
 			}
 			.sloganPara {
-			width: 100%;
-			@include respond(mobile) {
-				width: 85%;
-			}
-			position: relative;
-			@include flexbox;
-			p {
-				width: 60%;
+				-webkit-align-self: center;
+				    -ms-flex-item-align: center;
+				            -ms-grid-row-align: center;
+				        align-self: center;
+				width: 100%;
+				@include respond(mobile) {
+					width: 90%;
+				}
 				position: relative;
-				color: $white;
-				@include normalfont;
-				text-align: center;
-				margin: 0 auto;
+				p {
+					width: 80%;
+					position: relative;
+					color: $white;
+					@include header-five-six;
+					text-align: center;
+					@include respond(mobile) {
+						text-align: left;
+					}
+					margin: 0% auto 4% auto;
+				}
+				h4 {
+					width: 80%;
+					position: relative;
+					color: $white;
+					@include header-three-four;
+					text-align: center;
+					@include respond(mobile) {
+						text-align: center;
+					}
+					margin: 0% auto 4% auto;
+				}
 			}
-		}
 		}
 	}
 }
@@ -121,21 +134,21 @@ section {
 			text-align: left;
 			margin: 0 auto;
 		}
-
+		position: relative;
+		color: $white;
 	}
 }
 
 // Quote Sections
 .twoQuotes {
 	width: 100%;
-	height: 100%;
-	min-height: 100vh;
+	height: auto;
 	@include flexbox;
 	@include flexrow(wrap);
 	align-items: center;
 	justify-content: center;
 	@include respond(mobile) {
-		width: 85%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	.quoteContainer {
@@ -143,27 +156,26 @@ section {
 		@include flexcol(nowrap);
 		align-items: center;
 		justify-content: center;
-		margin: 2.5rem auto;
-		width: 45%;
+		margin: auto;
+		width: 50%;
 		@include respond(mobile) {
 			width: 100%;
 			height: auto;
-			min-height: 60vh;
 		}
-		min-height: 75vh;
 		height: 75%;
 		.borderContainer {
 			@include flexbox;
 			@include flexcol(nowrap);
 			align-items: center;
 			justify-content: center;
-			padding: 20%;
-			@include respond(mobile) {
-				padding: 15%;
-			}
+			padding: 10%;
 			width: 80%;
-			height: 80%;
-			border: none;
+			height: 380px;
+			@include respond(mobile) {
+				height: auto;
+				margin: 10%;
+			}
+			border: 5px solid $white;
 			h3 {
 				@include respond(mobile) {
 					text-align: center;
@@ -181,17 +193,12 @@ section {
 				margin: 15px;
 				width: 150%;
 			}
-			.quoteText {
-				visibility: hidden;
-
-			}
 		}
-		
+
 	}
 }
 #rebeccaSection {
 	height: auto;
-	min-height: 115vh;
 	.splitImageSection {
 		img {
 			@include respond(mobile) {
@@ -204,6 +211,7 @@ section {
 	}
 }
 #mhasfSection {
+	height: auto;
 	.splitImageSection {
 		a {
 			width: 50%;
@@ -215,7 +223,7 @@ section {
 				width: 100%;
 				height: 100%;
 				box-shadow: 0 1px 6px $white, 0 1px 4px $white;
-				
+
 			}
 		}
 	}
@@ -223,18 +231,16 @@ section {
 .splitScreen {
 	width: 100%;
 	height: 100%;
-	min-height: 100vh;
 	@include flexbox;
 	@include flexrow(wrap);
 	align-items: center;
-	background-color: $black;
 	.splitImageSection {
 		width: 35%;
 		height: 100%;
 		@include flexbox;
 		@include flexcol(nowrap);
 		align-items: center;
-		justify-content: center;
+		justify-content: border-top;
 		@include respond(mobile) {
 			width: 100%;
 			height: auto;
@@ -247,15 +253,18 @@ section {
 		}
 		width: 65%;
 		height: 100%;
+		p {
+			@include header-five-six;
+		}
 		.splitTitle {
 			color: $white;
 			margin: 0 0 5px 0;
-			border-bottom: 5px solid $primary-color;
 			width: 75%;
+			text-decoration: underline;
 			@include respond(mobile) {
 				height: auto;
 				width: 85%;
-				text-align: center;
+				text-align: left;
 				margin: 0 auto;
 				padding-top: 5px;
 			}
@@ -267,58 +276,9 @@ section {
 				padding: 10px 0 0 10px;
 				height: auto;
 				width: 85%;
-				text-align: center;
+				text-align: left;
 				margin: 10px auto;
 			}
 		}
 	}
-}
-
-#quoteContainerOne {
-	background:  linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
-        ), url('/images/quoteTwo.jpg');
-	background-size: cover;
-	
-}
-
-#quoteContainerTwo {
-	background:  linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
-        ), url('/images/quoteOne.jpg');
-	background-size: cover;
-}
-
-#quoteContainerThree {
-	background:  linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
-        ), url('/images/quoteThree.jpg');
-	background-size: cover;
-}
-
-#quoteContainerFour {
-	background:  linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
-        ), url('/images/quoteSix.jpg');
-	background-size: cover;
-}
-
-#quoteContainerFive {
-	background:  linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
-        ), url('/images/quoteFive.jpg');
-	background-size: cover;
-}
-
-#quoteContainerSix {
-	background:  linear-gradient(
-          rgba(0, 0, 0, 0.6), 
-          rgba(0, 0, 0, 0.6)
-        ), url('/images/quoteFour.jpg');
-	background-size: cover;
 }
