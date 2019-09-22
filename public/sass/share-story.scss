@@ -1,0 +1,162 @@
+@import 'siteWide';
+
+/* MAIN SECTION */
+.navLink {
+	color: $black;
+}
+#sectionMain {
+	position: relative;
+	top: 0;
+	padding: 2.5% 0 2.5% 0;
+	width: 100%;
+	#heroImageOverlay {
+		@include flexbox;
+		height: 100%;
+		width: 100%;
+		#heroImage {
+			background: linear-gradient(
+          rgba(0, 0, 0, 0.15),
+          rgba(0, 0, 0, 0.15)
+        ), url('/images/shareStoryHeroImage.jpg');
+			@include flexbox;
+			@include flexcol(nowrap);
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			width: 100%;
+			background-size: cover;
+			background-attachment: fixed;
+			@include respond(mobile) {
+				background: linear-gradient(
+          rgba(0, 0, 0, 0.15),
+          rgba(0, 0, 0, 0.15)
+        ), url('/images/shareStoryHeroImage.jpg');
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.centerPara {
+				height: 100%;
+				@include flexbox;
+				@include flexcol(nowrap);
+				-webkit-align-self: center;
+						-ms-flex-item-align: center;
+										-ms-grid-row-align: center;
+								align-self: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+						-ms-flex-pack: center;
+								justify-content: center;
+				//width: auto;
+				h1 {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: center;
+					color: $black;
+					padding: 0 10% 5% 30%;
+					@include headerfont;
+					margin: 5% 0 0 0;
+				}
+				h2 {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: center;
+					color: $black;
+					padding: 0 10% 5% 30%;
+					@include smaller-head-font;
+					margin: 5% 0 0 0;
+				}
+				h3 {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: center;
+					color: $black;
+					padding: 0 10% 5% 30%;
+					@include header-three-four;
+					margin: 5% 0 0 0;
+				}
+				p {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: center;
+					color: $black;
+					padding: 0 10% 5% 30%;
+					@include normalfont;
+					margin: 5% 0 0 0;
+				}
+				p.bold {
+					font-weight: bold;
+				}
+				ol {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: left;
+					color: $black;
+					padding: 0 10% 5% 45%;
+					@include normalfont;
+					margin: 5% 0 0 0;
+				}
+				ul {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: left;
+					color: $black;
+					padding: 0 0 5% 20%;
+					@include normalfont;
+					margin: 5% 0 0 0;
+				}
+				ul.centered {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: left;
+					color: $black;
+					padding: 0 10% 5% 40%;
+					@include normalfont;
+					margin: 5% 0 0 0;
+				}
+				li {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					text-align: left;
+					color: $black;
+					padding: 0 10% 5% 1%;
+					@include normalfont;
+					margin: 5% 0 0 0;
+				}
+				img {
+					-webkit-align-self: center;
+							-ms-flex-item-align: center;
+											-ms-grid-row-align: center;
+									align-self: center;
+					align-items: center;
+					margin: 0 0 0 20%;
+				}
+			}
+		}
+	}
+	@include flexbox;
+	@include flexcol(nowrap);
+}
