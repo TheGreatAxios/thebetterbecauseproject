@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const moment = require('moment');
 
 let content = require('./content');
 let mongoose = require('../../../logic/databaseConnect');
@@ -21,7 +22,8 @@ router.get('/stories/:id', (req, res) => {
 		if (err) { console.log(err); return err; }
 		res.render('story', {
 			content: content,
-			story: story
+			story: story,
+			moment: moment
 		});
 	});
 });
