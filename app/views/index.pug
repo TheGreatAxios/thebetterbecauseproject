@@ -8,93 +8,10 @@ block content
 			h1 The Better Because Project
 			.sloganPara
 				p  The Better Because Project is sharing stories about how we’ve changed for the better because of what we’ve gone through our mental health experiences and about the growth and fulfillment that can come with these journeys.
+				br
 				p We believe that by sharing universal stories of surmounting challenges with our mental health, we can serve a role in supporting other people around the world in their journeys of betterment.
-	.formTitleSection
-		h2 Submit Your Story!
-		p * Indicates required sections.
-	.formSection
-		.formGuidlines
-			h3 Submission Guidelines
-			.guideSection
-				h4 Name
-				p Please include your full name upon submission.  Your name will not be shared or shown if you choose to remain anonymous. 
-			.guideSection
-				h4 Email
-				p Please include the best email to reach you at.  Your email will not be shared or shown unless you choose to include it in your story.  We use your email address to contact you during the story editing phase.
-			.guideSection
-				h4 Story
-				p 
-					| Please write a statement sharing what you have been through, what you have learned, and what is better in your life because of your mental health experiences. 
-					em Think of this as your Post Traumatic Growth Story. 
-					| Some of the things you may have experienced may include, but aren't limited to:
-				ul
-					li Suicidal Thoughts or Attempted Suicide
-					li Self-Harm
-					li Homelessness
-					li Hospitalization
-					li Job Loss
-					li Loss of Relationship
-					li Substance Abuse
-					li Hitting Rock Bottom (whatever that means for you)
-				p Mental health challenges are on a continuum, so if you’re human and have struggled with something that affected your functioning in life, we encourage you to participate in this project.
-				p 
-					em Some of "what's better for you" may include, but isn't limited to:
-				ul
-					li Learning that you are the expert on your own experience
-					li Developing wellness and stress management skills
-					li Building support networks
-					li Practicing patience with yourself and others
-					li Becoming more compassionate and community-minded
-					li Choosing self-care that is right for you
-				p
-					em If you're not sure what to say, here are some prompts to get you started:
-				ul
-					li How is your life better or different in a positive way because of your mental health experiences?
-					li What would you want to say to someone who is going through something similar to what you have (or are) experiencing?
-			.guideSection
-				h4 Image
-				p A photo of yourself, or what you believe showcases who you are.  If you would prefer not to upload a photo; select "Use a Default Image" to use the default image for The Better Because Project.
-			.guideSection
-				p No matter what you have been through- you're still here to tell the story, and we are happy about that! This community is better because you're part of it. We hope you'll share your story with us.
-		form(action='/addpost', id='storyForm', method='post', enctype='multipart/form-data')
-			.elementSection
-				label(for='name') What's Your Name? *
-				input(type='text', name='name', id='name', required)
-			.elementSection.checkSection
-				input(type='checkbox', name='anonymous', id='anonymous', value='true') 
-				label(for='anonymous') Check this box if you would like your name to remain anonymous
-			.elementSection
-				label(for='email') Your Email Goes Here. *
-				input(type='email', name='email', id='email', required)
-			.elementSection#countingSection
-				label(for='story') Write Your Story Here. *
-				textarea(name='story', id='story', required)
-				span#counter
-			//.elementSection
-				label(for='country') This section is optional.  Please input your the country you would like to be associated with.  (Either where you are from, or where you currently live)
-				input(type='text', name='country', id='country')
-			.elementSection
-				label(for='notes') This section is optional.  Please place additional information you want us to know, comments about the project, or suggestions.  Thanks!
-				textarea(name='notes', id='notes')
-			.elementSection.buttonSection
-					.buttonSect#leftButton
-						button#imgSectionOneButtonUpload Upload your own Image, Don't choose an image to use default.
-					//.buttonSect#rightButton
-						button#imgSectionOneButtonDefault Use the default image
-			.elementSection#imgSectionTwoUserUpload
-				input(type='file', id='imageUpload', name='imageUpload')
-			.elementSection#imgSectionTwoDefaultImage
-				input(type='hidden', id='imageDefault', name='imageDefault')
-				P Your story will use the default image.
-			input(type='hidden', value='false', name='published')
-			.elementSection.checkSection
-				input(type='checkbox', name='releaseAgreement', id='releaseAgreement', required)
-				label(for='releaseAgreement') 
-					| Please Review the Release Agreement 
-					a#releaseLink(target='_blank', href='/pdfs/consentLicenseAndReleaseAgreement.pdf') here. 
-					| By submitting your story you agree to all the terms stated in the agreement.
-			.elementSection
-				input(type='submit', value='Submit My Story')
+				br
+				h2 #[a.navLink(target='_blank' href='https://medium.com/the-better-because-project/story-submission-process-ddacae9c3175') Submit Your Story!]
 	include partials/footer
 	link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
 	link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.1.0/css/all.css', integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt', crossorigin='anonymous')

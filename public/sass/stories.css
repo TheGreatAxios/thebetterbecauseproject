@@ -15,13 +15,13 @@ h1 {
   padding-bottom: 1.5% auto; }
   @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
     h1 {
-      font-size: 30px; } }
+      font-size: 32px; } }
   @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
     h1 {
-      font-size: 38px; } }
+      font-size: 40px; } }
   @media only screen and (min-device-width: 1024px) {
     h1 {
-      font-size: 45px; } }
+      font-size: 47px; } }
 
 h2 {
   font-family: Helvetica, sans-serif;
@@ -54,13 +54,13 @@ h5, h6 {
   text-decoration: none; }
   @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
     h5, h6 {
-      font-size: 18px; } }
+      font-size: 20px; } }
   @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
     h5, h6 {
-      font-size: 24px; } }
+      font-size: 26px; } }
   @media only screen and (min-device-width: 1024px) {
     h5, h6 {
-      font-size: 30px; } }
+      font-size: 32px; } }
 
 a {
   text-decoration: none; }
@@ -281,13 +281,13 @@ header {
       text-decoration: none; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         .footer #about h5 {
-          font-size: 18px; } }
+          font-size: 20px; } }
       @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
         .footer #about h5 {
-          font-size: 24px; } }
+          font-size: 26px; } }
       @media only screen and (min-device-width: 1024px) {
         .footer #about h5 {
-          font-size: 30px; } }
+          font-size: 32px; } }
     .footer #about .links {
       min-height: 75%; }
       .footer #about .links a {
@@ -346,13 +346,13 @@ header {
       color: #FFFFFF; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         .footer section h5 {
-          font-size: 18px; } }
+          font-size: 20px; } }
       @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
         .footer section h5 {
-          font-size: 24px; } }
+          font-size: 26px; } }
       @media only screen and (min-device-width: 1024px) {
         .footer section h5 {
-          font-size: 30px; } }
+          font-size: 32px; } }
     .footer section .links {
       width: 100%;
       height: 75%;
@@ -404,13 +404,13 @@ header {
         text-decoration: none; }
         @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
           .footer section .links .deadLink {
-            font-size: 18px; } }
+            font-size: 20px; } }
         @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
           .footer section .links .deadLink {
-            font-size: 24px; } }
+            font-size: 26px; } }
         @media only screen and (min-device-width: 1024px) {
           .footer section .links .deadLink {
-            font-size: 30px; } }
+            font-size: 32px; } }
 
 #variable {
   background-color: #2D2E2D;
@@ -565,13 +565,13 @@ header {
     text-decoration: none; }
     @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
       #blogMain h1 {
-        font-size: 30px; } }
+        font-size: 32px; } }
     @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
       #blogMain h1 {
-        font-size: 38px; } }
+        font-size: 40px; } }
     @media only screen and (min-device-width: 1024px) {
       #blogMain h1 {
-        font-size: 45px; } }
+        font-size: 47px; } }
   #blogMain p, #blogMain h1 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -859,13 +859,13 @@ header {
             width: 100%; }
             @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
               .blogSection .story .rightSide .bottomBar .categories p, .blogSection .story .rightSide .bottomBar .storyLink p {
-                font-size: 18px; } }
+                font-size: 20px; } }
             @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
               .blogSection .story .rightSide .bottomBar .categories p, .blogSection .story .rightSide .bottomBar .storyLink p {
-                font-size: 24px; } }
+                font-size: 26px; } }
             @media only screen and (min-device-width: 1024px) {
               .blogSection .story .rightSide .bottomBar .categories p, .blogSection .story .rightSide .bottomBar .storyLink p {
-                font-size: 30px; } }
+                font-size: 32px; } }
         .blogSection .story .rightSide .bottomBar .categories {
           width: 60%; }
         .blogSection .story .rightSide .bottomBar .storyLink {

@@ -15,13 +15,13 @@ h1 {
   padding-bottom: 1.5% auto; }
   @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
     h1 {
-      font-size: 30px; } }
+      font-size: 32px; } }
   @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
     h1 {
-      font-size: 38px; } }
+      font-size: 40px; } }
   @media only screen and (min-device-width: 1024px) {
     h1 {
-      font-size: 45px; } }
+      font-size: 47px; } }
 
 h2 {
   font-family: Helvetica, sans-serif;
@@ -54,13 +54,13 @@ h5, h6 {
   text-decoration: none; }
   @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
     h5, h6 {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
     h5, h6 {
-      font-size: 24px; } }
+      font-size: 22px; } }
   @media only screen and (min-device-width: 1024px) {
     h5, h6 {
-      font-size: 30px; } }
+      font-size: 28px; } }
 
 a {
   text-decoration: none; }
@@ -281,13 +281,13 @@ header {
       text-decoration: none; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         .footer #about h5 {
-          font-size: 18px; } }
+          font-size: 16px; } }
       @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
         .footer #about h5 {
-          font-size: 24px; } }
+          font-size: 22px; } }
       @media only screen and (min-device-width: 1024px) {
         .footer #about h5 {
-          font-size: 30px; } }
+          font-size: 28px; } }
     .footer #about .links {
       min-height: 75%; }
       .footer #about .links a {
@@ -346,13 +346,13 @@ header {
       color: #FFFFFF; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         .footer section h5 {
-          font-size: 18px; } }
+          font-size: 16px; } }
       @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
         .footer section h5 {
-          font-size: 24px; } }
+          font-size: 22px; } }
       @media only screen and (min-device-width: 1024px) {
         .footer section h5 {
-          font-size: 30px; } }
+          font-size: 28px; } }
     .footer section .links {
       width: 100%;
       height: 75%;
@@ -404,13 +404,13 @@ header {
         text-decoration: none; }
         @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
           .footer section .links .deadLink {
-            font-size: 18px; } }
+            font-size: 16px; } }
         @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
           .footer section .links .deadLink {
-            font-size: 24px; } }
+            font-size: 22px; } }
         @media only screen and (min-device-width: 1024px) {
           .footer section .links .deadLink {
-            font-size: 30px; } }
+            font-size: 28px; } }
 
 #variable {
   background-color: #2D2E2D;
@@ -602,19 +602,19 @@ header {
       align-self: center;
       text-align: center;
       color: #FFFFFF;
-      padding: 0 0 5% 0;
+      padding: 0 0 4% 0;
       font-family: Helvetica, sans-serif;
       text-decoration: none;
-      margin: 5% 0 0 0; }
+      margin: 6% 0 0 0; }
       @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
         #sectionMain .centerPara h1 {
-          font-size: 30px; } }
+          font-size: 32px; } }
       @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
         #sectionMain .centerPara h1 {
-          font-size: 38px; } }
+          font-size: 40px; } }
       @media only screen and (min-device-width: 1024px) {
         #sectionMain .centerPara h1 {
-          font-size: 45px; } }
+          font-size: 47px; } }
     #sectionMain .centerPara .sloganPara {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
@@ -632,258 +632,30 @@ header {
         font-family: Helvetica, sans-serif;
         text-decoration: none;
         text-align: center;
-        margin: 0% auto 4% auto; }
+        margin: 2% auto 2% auto; }
         @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
           #sectionMain .centerPara .sloganPara p {
-            font-size: 18px; } }
+            font-size: 16px; } }
         @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
           #sectionMain .centerPara .sloganPara p {
-            font-size: 24px; } }
+            font-size: 22px; } }
         @media only screen and (min-device-width: 1024px) {
           #sectionMain .centerPara .sloganPara p {
-            font-size: 30px; } }
-
-.formTitleSection {
-  padding: 5%;
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .formTitleSection h3 {
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 15px;
-    font-family: Helvetica, sans-serif;
-    text-decoration: none; }
-    @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
-      .formTitleSection h3 {
-        font-size: 22px; } }
-    @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
-      .formTitleSection h3 {
-        font-size: 30px; } }
-    @media only screen and (min-device-width: 1024px) {
-      .formTitleSection h3 {
-        font-size: 35px; } }
-
-.formSection {
-  padding: 0;
-  width: 100%;
-  min-width: 100vw;
-  height: 100%;
-  min-height: 75vh;
-  margin: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .formSection .formGuidlines {
-    width: 42.5%;
-    height: 100%;
-    min-height: 75vh;
-    border-right: 5px solid #FFCC01; }
-    .formSection .formGuidlines .guideSection {
-      width: 90%; }
-    @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
-      .formSection .formGuidlines {
-        width: 100%;
-        flex-basis: 100%;
-        border: none;
-        margin: 0;
-        padding: 0; }
-        .formSection .formGuidlines h3 {
-          text-align: center; }
-        .formSection .formGuidlines ul {
-          text-align: left;
-          width: 85%; }
-        .formSection .formGuidlines .guideSection {
-          padding: 0;
-          margin: 0;
-          width: 100%; }
-          .formSection .formGuidlines .guideSection h4 {
-            text-align: center;
-            width: 50%;
-            padding: 0;
-            margin: 5px auto;
-            font-family: Helvetica, sans-serif;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid #FFCC01; } }
-      @media only screen and (min-device-width: 1px) and (max-device-width: 768px) and (min-device-width: 1px) and (max-device-width: 768px) {
-        .formSection .formGuidlines .guideSection h4 {
-          font-size: 22px; } }
-      @media only screen and (min-device-width: 1px) and (max-device-width: 768px) and (mmin-device-width: 769px) and (max-device-width: 1023px) {
-        .formSection .formGuidlines .guideSection h4 {
-          font-size: 30px; } }
-      @media only screen and (min-device-width: 1px) and (max-device-width: 768px) and (min-device-width: 1024px) {
-        .formSection .formGuidlines .guideSection h4 {
-          font-size: 35px; } }
-    @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
-          .formSection .formGuidlines .guideSection p {
-            margin: 0 auto;
-            padding: 0;
-            text-align: left;
-            width: 85%;
-            text-indent: 15px; } }
-  .formSection form {
-    width: 52.5%;
-    height: 100%;
-    min-height: 75vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
-      .formSection form {
-        width: 100%;
-        flex-basis: 100%; } }
-    .formSection form .elementSection {
-      width: 100%;
-      height: 20%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      padding: 5px 0 5px 0; }
-      .formSection form .elementSection input, .formSection form .elementSection textarea, .formSection form .elementSection label {
-        width: 75%;
-        padding: 10px 10px 10px 10px;
-        margin: 1%;
-        font-size: 20px;
+            font-size: 28px; } }
+      #sectionMain .centerPara .sloganPara h2 {
+        width: 80%;
+        position: relative;
+        color: #FFFFFF;
+        font-family: Helvetica, sans-serif;
+        text-decoration: none;
         text-align: center;
-        color: #2D2E2D; }
-    .formSection form .buttonSection {
-      width: 75%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-      .formSection form .buttonSection #leftButton {
-        -webkit-align-self: flex-end;
-        -ms-flex-item-align: end;
-        align-self: flex-end; }
-      .formSection form .buttonSection #rightButton {
-        -webkit-align-self: flex-start;
-        -ms-flex-item-align: start;
-        align-self: flex-start; }
-      .formSection form .buttonSection .buttonSect {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        width: 45%;
-        margin: auto; }
-    .formSection form #imgSectionTwoUserUpload, .formSection form #imgSectionTwoDefaultImage {
-      height: 0px; }
-    .formSection form .checkSection {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-      .formSection form .checkSection input {
-        width: 5%; }
-      .formSection form .checkSection label {
-        width: 70%; }
-
-textarea {
-  height: 50vh;
-  resize: vertical;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-/* mozilla solution */
-input:-moz-placeholder {
-  text-align: center;
-  color: black; }
-
-/********************************************/
-textarea:focus, input:focus, button:focus {
-  outline-color: black; }
+        margin: 2% auto 2% auto; }
+        @media only screen and (min-device-width: 1px) and (max-device-width: 768px) {
+          #sectionMain .centerPara .sloganPara h2 {
+            font-size: 22px; } }
+        @media only screen and (mmin-device-width: 769px) and (max-device-width: 1023px) {
+          #sectionMain .centerPara .sloganPara h2 {
+            font-size: 30px; } }
+        @media only screen and (min-device-width: 1024px) {
+          #sectionMain .centerPara .sloganPara h2 {
+            font-size: 35px; } }

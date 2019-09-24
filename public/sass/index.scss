@@ -18,31 +18,31 @@
 	max-width: 100vw;
 	height: 100vh;
 	background: -webkit-gradient(
-          linear, 
-          left top, left bottom, 
-          from(rgba(0, 0, 0, 0.45)), 
+          linear,
+          left top, left bottom,
+          from(rgba(0, 0, 0, 0.45)),
           to(rgba(0, 0, 0, 0.45))
         ), url('/images/heroImageOne.jpg');
 	background: -webkit-linear-gradient(
-          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45),
           rgba(0, 0, 0, 0.45)
         ), url('/images/heroImageOne.jpg');
 	background: -o-linear-gradient(
-          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45),
           rgba(0, 0, 0, 0.45)
         ), url('/images/heroImageOne.jpg');
 	background: linear-gradient(
-          rgba(0, 0, 0, 0.45), 
+          rgba(0, 0, 0, 0.45),
           rgba(0, 0, 0, 0.45)
         ), url('/images/heroImageOne.jpg');
 	background-position: center;
 	background-size: cover;
 	@include flexbox;
 	@include flexcol(nowrap);
-	
+
 	@include flexbox;
 	@include flexcol(nowrap);
-	
+
 	.centerPara {
 		height: 100%;
 		@include flexbox;
@@ -63,9 +63,9 @@
 			        align-self: center;
 			text-align: center;
 			color: $white;
-			padding: 0 0 5% 0;
+			padding: 0 0 4% 0;
 			@include headerfont;
-			margin: 5% 0 0 0;
+			margin: 6% 0 0 0;
 		}
 		.sloganPara {
 			-webkit-align-self: center;
@@ -83,186 +83,16 @@
 				color: $white;
 				@include header-five-six;
 				text-align: center;
-				margin: 0% auto 4% auto;
+				margin: 2% auto 2% auto;
 			}
-		}
-	}
-}
-.formTitleSection {
-	padding: 5%;
-	width: 100%;
-	height: auto;
-	position: relative;
-	@include flexbox;
-	@include flexcol(nowrap);
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	h3 {
-		width: 100%;
-		height: 25%;
-		text-align: center;
-		margin: 0 auto;
-		padding: 15px;
-		@include header-three-four;
-	}
-}
-.formSection {
-	padding: 0;
-	width: 100%;
-	min-width: 100vw;
-	height: 100%;
-	min-height: 75vh;
-	margin: auto;
-	@include flexbox;
-	@include flexrow(wrap);
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	.formGuidlines {
-		width: 42.5%;
-		height: 100%;
-		min-height: 75vh;
-		border-right: 5px solid $primary-color;
-		.guideSection {
-			width: 90%;
-		}
-		@include respond(mobile) {
-			width: 100%;
-			flex-basis: 100%;
-			border: none;
-			margin: 0;
-			padding: 0;
-			h3 {
+			h2 {
+				width: 80%;
+				position: relative;
+				color: $white;
+				@include header-three-four;
 				text-align: center;
-			}
-			ul {
-				text-align: left;
-				width: 85%;
-			}
-			.guideSection {
-				padding: 0;
-				margin: 0;
-				width: 100%;
-				;
-				h4 {
-					text-align: center;
-					width: 50%;
-					padding: 0;
-					margin: 5px auto;
-					@include header-three-four;
-					font-weight: 600;
-					border-bottom: 2px solid $primary-color
-				}
-				p {
-					margin: 0 auto;
-					padding: 0;
-					text-align: left;
-					width: 85%;
-					text-indent: 15px;
-				}
+				margin: 2% auto 2% auto;
 			}
 		}
 	}
-	form {
-		@include respond(mobile) {
-			width: 100%;
-			flex-basis: 100%;
-		}
-		width: 52.5%;
-		height: 100%;
-		min-height: 75vh;
-		@include flexbox;
-		@include flexcol(wrap);
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		.elementSection {
-			width: 100%;
-			height: 20%;
-			@include flexbox;
-			@include flexcol(wrap);
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			    -ms-flex-align: center;
-			        align-items: center;
-			-webkit-box-pack: center;
-			-webkit-justify-content: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-			padding: 5px 0 5px 0;
-			input, textarea, label {
-				width: 75%;
-				padding: 10px 10px 10px 10px;
-				margin: 1%;
-				font-size: 20px;
-				text-align: center;
-				color: $black;
-			}
-		}
-		.buttonSection {
-			width: 75%;
-			@include flexbox;
-			@include flexrow(wrap);
-			#leftButton {
-				-webkit-align-self: flex-end;
-				    -ms-flex-item-align: end;
-				        align-self: flex-end;
-			}
-			#rightButton {
-				-webkit-align-self: flex-start;
-				    -ms-flex-item-align: start;
-				        align-self: flex-start;
-			}
-			.buttonSect {
-				@include flexbox;
-				@include flexcol(nowrap);
-				width: 45%;
-				margin: auto;
-			}
-		}
-		#imgSectionTwoUserUpload, #imgSectionTwoDefaultImage {
-			height: 0px;
-		}
-		.checkSection {
-			@include flexrow(nowrap);
-			input {
-				width: 5%;
-			}
-			label {
-				width: 70%;
-			}
-		}
-	}
-}
-textarea {
-	height: 50vh;
-	resize: vertical;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-
-/* mozilla solution */
-input:-moz-placeholder { 
-    text-align: center; 
-    color: black;
-}
-/********************************************/
-textarea:focus, input:focus, button:focus {
-    outline-color: black;
 }
