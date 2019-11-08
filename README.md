@@ -8,7 +8,7 @@ In addition to this project having an open source codebase; we are always on the
 
 If you’re interested in volunteering on an ongoing basis with the team please email the founder, Rebecca Massie, at Rebecca@TheBetterBecauseProject.org
 
-We’re a fun remote team around the USA and very passionate about this important cause. We can offer letters of recommendations to add to your resumes. You’d also be contributing to an important and impactful social justice project.
+We’re a fun remote international team and very passionate about this important cause. We can offer letters of recommendations to add to your resumes. You’d also be contributing to an important and impactful social justice project.
 
 # About the Code
 
