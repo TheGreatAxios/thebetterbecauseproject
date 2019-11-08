@@ -1,6 +1,6 @@
 # The Better Because Project
 
-The Better Because Project is an open source project in partnership with the Mental Health Association of San Francisco (MHASF).
+The Better Because Project is an open source project.
 
 The mission of The Better Because Project is to inspire people through stories about how we’ve changed for the better because of what we’ve gone through with our mental health experiences. In addition, our stories discussthe growth and fulfillment that can come with these journeys.
 
