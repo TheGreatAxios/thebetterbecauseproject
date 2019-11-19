@@ -81,17 +81,8 @@ This project utilizes MongoDB (NoSQL) as the database with MongooseJs as the ORM
 Currently the model file is fairly basic.  Over time it will grow as the platform does to utilize more of the feature set offered by both MongoDB and Mongoose.
 
 ## Roadmap (Features under Github Projects)
-
- - [X] NodeJs Configuration with Mongoose
- - [X] Cloudinary API Integration for Story Images
- - [X] Custom Backend with Admin and Developer Access
- - [X] Ability to edit stories via the backend
- - [ ] Ability to delete stories via the backend
- - [ ] Ability to update images via the backend
- - [ ] Change one story section to dynamic paragraphs as selected by the user
- - [ ] Make dynamic paragraphs editable via the backend
- - [ ] Integration of Medium
- - [ ] Update's to the Front-end Design
+Ideally the issues are kept up to date enough but this is an additional resource
+https://docs.google.com/document/d/1x7OtuM8gWtpWwZrSTwIhTptJAlWqbupU3jfO7hc2N4w/edit?usp=sharing
 
 ## Tests
 
