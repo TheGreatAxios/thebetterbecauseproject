@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/thegreataxios/fleurWebsite#readme",
   "dependencies": {
-    "bcrypt": "^3.0.2",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "cloudinary": "^1.14.0",
     "compression": "^1.7.3",
